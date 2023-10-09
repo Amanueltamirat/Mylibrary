@@ -15,7 +15,7 @@ indexRouters.get("/", async (req, res) => {
     res.redirect("/");
   }
 });
-
+//new routers
 indexRouters.get("/new", (req, res) => {
   res.render("authors/new", { author: new Author() });
 });

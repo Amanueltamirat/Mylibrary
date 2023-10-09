@@ -6,6 +6,7 @@ const express = require("express");
 const app = express();
 const indexRouters = require("./controllers/index");
 const authorsRouters = require("./controllers/authors");
+const booksRouters = require("./controllers/books");
 const expressLayouts = require("express-ejs-layouts");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -22,5 +23,7 @@ app.use(express.static("public"));
 
 app.use("/", indexRouters);
 app.use("/authors", authorsRouters);
+
+app.use("/books", booksRouters);
 
 app.listen(process.env.PORT || 3000);
