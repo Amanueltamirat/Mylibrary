@@ -1,0 +1,10 @@
+<div class="book">
+  <h2>Edit Book</h2>
+  <form action="/books/<%= book.id  %>?_method=PUT" method="POST">
+    <%- include('_form_field') %>
+    <div class="form-row btn-row">
+      <a class="cancel" href="/books/<%= book.id  %>">Cancel</a>
+      <button class="edit" type="submit">Update</button>
+    </div>
+  </form>
+</div>

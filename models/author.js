@@ -1,9 +1,22 @@
 const mongoose = require("mongoose");
-const authorSchema = new mongoose.Schema({
+const Book = require("./book");
+const Schima = mongoose.Schema;
+const AuthorSchima = new Schima({
   name: {
     type: String,
     required: true,
   },
 });
 
-module.exports = mongoose.model("Author", authorSchema);
+AuthorSchima.pre("delete", function (next) {
+  Book.find({ author: this.id }, (err, books) => {
+    if (err) {
+      next(err);
+    } else if (books.length > 0) {
+      next(new Error("This author has still a books"));
+    } else {
+      next();
+    }
+  });
+});
+module.exports = mongoose.model("Author", AuthorSchima);

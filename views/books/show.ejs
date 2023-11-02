@@ -1,0 +1,15 @@
+<h2 class="book-title"><%= book.title %></h2>
+<div class="book-details">
+  <p><span>Author:</span><%= book.author.name %></p>
+  <p><span>Publish Date:</span> <%=book.publishedDate.toDateString()%></p>
+  <p><span>Page Count:</span> <%= book.pageCount %></p>
+  <p><span>Description: </span><%= book.description %></p>
+</div>
+<div class="book-btns">
+  <a class="edit" href="/books/<%= book.id%>/edit">Edit</a>
+
+  <a class="view view-author" href="/authors/<%= book.author.id  %>"
+    >View Author</a
+  >
+  <%- include('../partial/deleteForm', {url:`/books/${book.id}`}) %>
+</div>

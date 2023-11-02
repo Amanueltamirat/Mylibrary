@@ -3,17 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mylibrary</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/stylesheet/main.css" />
+    <title>Mybrary</title>
   </head>
   <body>
-    <div class="container">
-      <%-include('../partials/header.ejs') %>
-      <br />
-      <%- body %>
-      <br />
+    <div class="cotainer">
+      <div><%- include('../partial/header') %></div>
+      <%- include('../partial/errorMessage') %>
+      <div class="inner-container"><%- body %></div>
     </div>
   </body>
 </html>
-
-<!-- include('../partials/errorMessage.ejs')  -->

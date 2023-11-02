@@ -1,0 +1,266 @@
+:root {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+body {
+  background: linear-gradient(to right, rgb(16, 16, 78), rgb(59, 57, 57));
+  color: rgb(199, 195, 195);
+}
+
+.cotainer {
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.inner-container {
+  margin: 0 4rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5ms all;
+  margin-bottom: 5rem;
+}
+.header-logo {
+  font-size: 50px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header-logo a {
+  text-decoration: none;
+  color: rgb(199, 195, 195);
+}
+.header-logo a:hover {
+  color: rgb(176, 142, 142);
+}
+.header ul {
+  display: flex;
+}
+.header ul li {
+  margin-right: 2rem;
+  list-style: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.header ul li a {
+  text-decoration: none;
+  color: rgba(199, 195, 195, 0.748);
+}
+.header ul li a:hover {
+  color: rgba(124, 114, 114, 0.748);
+}
+
+.book-title a:hover {
+  color: rgba(245, 235, 235, 0.96);
+}
+
+.search {
+  font-size: 30px;
+  color: white;
+}
+.delete-form button,
+.cancel {
+  font-size: 18px;
+  background: rgb(100, 5, 5);
+  border: none;
+  color: rgb(222, 210, 210);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.cancel {
+  text-decoration: none;
+}
+.create {
+  border: none;
+}
+.index-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.index-form label {
+  font-size: 25px;
+}
+.index-form input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  width: 250px;
+}
+.search-button {
+  font-size: 18px;
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+}
+.view,
+.edit,
+.create {
+  background-color: white;
+  padding: 5px 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  border: none;
+}
+
+.author-container {
+  cursor: pointer;
+}
+
+.author-container {
+}
+.author-name {
+  font-size: 25px;
+  color: gray;
+}
+.btns,
+.book-btns {
+  display: flex;
+  align-items: flex-start;
+}
+
+.btns > *,
+.book-btns > * {
+  margin-left: 1rem;
+}
+.btns > *:first-child {
+  margin-left: 0;
+}
+
+.book-form {
+  display: flex;
+  gap: 20px;
+}
+.book-form label {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.book-form input,
+.select,
+.file {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 250px;
+  height: 50%;
+}
+.book-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.description textarea:focus {
+  outline: none;
+}
+.description textarea {
+  width: 250px;
+  height: 70%;
+}
+.author-form {
+  width: 300px;
+}
+
+.form-row {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+.btn-row button {
+  font-size: 18px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+.book {
+  max-width: 535px;
+}
+.book-name {
+  font-size: 25px;
+  color: gray;
+  text-decoration: none;
+  border-bottom: 2px solid gray;
+}
+.book-description {
+  margin-left: 1rem;
+}
+
+.book-btns > * {
+  margin-left: 0.5rem;
+}
+.book-title {
+  margin-left: 1rem;
+  color: rgb(230, 228, 228);
+  display: inline-block;
+  border-bottom: 2px solid rgb(230, 228, 228);
+}
+
+.book-details span {
+  color: rgb(230, 228, 228);
+  font-size: 25px;
+}
+
+.author-btns {
+  max-width: 600px;
+  margin-top: 0.5rem;
+}
+.added-books {
+  margin: 0 2rem;
+}
+.book-title {
+}
+.added-books a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgba(236, 216, 216, 0.748);
+}
+.author {
+  max-width: 600px;
+}
+.author form {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.author-index .name {
+  display: flex;
+  align-self: flex-start;
+}
+.author form input {
+  width: 100%;
+}
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.btn > * {
+  margin-left: 1rem;
+}
+.btn-container {
+}
+.author-edit form {
+  max-width: 500px;
+  /* display: flex;
+  flex-direction: column; */
+}
+.author-input {
+  display: flex;
+  flex-direction: column;
+}
+.author-input label {
+  align-self: flex-start;
+}
+.author-input input {
+  width: 100%;
+}
+#author-btns {
+  align-self: flex-end;
+}

@@ -1,0 +1,10 @@
+<h2>Edit Author</h2>
+<div class="author-edit">
+  <form action="/authors/<%= authors.id  %>?_method=PUT" method="POST">
+    <%- include('_form_field') %>
+    <div class="author-btns form-row btn-row" id="author-btns">
+      <a class="cancel" href="/authors/<%= authors.id  %>">Cancel</a>
+      <button class="edit" type="submit">Edit</button>
+    </div>
+  </form>
+</div>

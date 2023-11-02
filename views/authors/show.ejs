@@ -1,0 +1,10 @@
+<h2><%= author.name %></h2>
+<div class="book-btns">
+  <a class="edit" href="/authors/<%= author.id  %>/edit">Edit</a>
+  <%- include('../partial/deleteForm', {url:`/authors/${author.id}`}) %>
+</div>
+<% if(bookByAuthor.length > 0){ %>
+<h3>Books By <%= author.name %>:</h3>
+<% bookByAuthor.forEach((book)=>{ %>
+<a class="book-name" href="/books/<%= book.id%>"><p><%= book.title %></p></a>
+<% }) %> <% } %>
